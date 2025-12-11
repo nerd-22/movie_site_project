@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Netflix-inspired styles */
+.scrollbar-thin {
+	scrollbar-width: thin;
+}
+.scrollbar-thumb-gray-700::-webkit-scrollbar-thumb {
+	background: #374151;
+}
+.scrollbar-track-black::-webkit-scrollbar-track {
+	background: #000;
+}
+
+.netflix-shadow {
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.7), 0 1.5px 4px 0 rgba(0,0,0,0.5);
+}
+
+.netflix-nav {
+	background: linear-gradient(180deg,rgba(0,0,0,0.9) 60%,rgba(0,0,0,0.1) 100%);
+}
