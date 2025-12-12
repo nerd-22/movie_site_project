@@ -9,6 +9,10 @@
         <a href="#">Cookie Preferences</a>
         <a href="#">Corporate Information</a>
       </div>
+      
+      <!-- Gradient Separator Line -->
+      <div class="footer-separator"></div>
+      
       <div class="footer-brand">&copy; 2025 Prime Box. Inspired by Netflix.</div>
     </div>
   </footer>
@@ -24,6 +28,7 @@
   padding: 2.5rem 0 1.5rem 0;
   border-top: 1.5px solid #232323;
 }
+
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -32,6 +37,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -39,27 +45,31 @@
   justify-content: center;
   margin-bottom: 1.2rem;
 }
+
 .footer-links a {
   color: #b3b3b3;
   font-size: 1rem;
   text-decoration: none;
   transition: color 0.2s;
 }
+
 .footer-links a:hover {
   color: #e50914;
 }
-.footer-brand {
-  color: #888;
-  font-size: 0.95rem;
-  text-align: center;
-}
-@media (max-width: 700px) {
-  .footer-links {
-    gap: 0.7rem;
-    font-size: 0.9rem;
-  }
-  .footer-section {
-    padding: 1.2rem 0 0.7rem 0;
-  }
+
+/* Gradient Separator Styles */
+.footer-separator {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #e50914 30%,
+    #e50914 70%,
+    transparent 100%
+  );
+  margin: 1rem 0 1.2rem 0;
+  opacity: 0.4;
+  position: relative;
 }
 </style>
